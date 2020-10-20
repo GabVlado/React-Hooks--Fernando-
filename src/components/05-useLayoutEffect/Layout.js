@@ -13,7 +13,9 @@ export const Layout = () => {
     const {quote} = !!data && data[0] ;
 
     const pTag = useRef();
+    
     const [boxSize, setBoxSize] = useState({})
+    
     useLayoutEffect(() => {
         
         setBoxSize( pTag.current.getBoundingClientRect() )
